@@ -47,6 +47,67 @@ table {
 	border-spacing: 0;
 }
 
+/* Reset end */
+
+:root {
+    --bg-color: #201D32;
+    --font-color: #727080;
+    --md: 768px;
+    --lg: 992px;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
 .lead {
+    height: 50vh;
     background-image: url(./assets/citynight.jpg);
+    background-size: cover;
+    background-position-y: bottom;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 18px;
+}
+
+.layer {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px){
+    .lead {
+        background-position-y: center;
+    }
+}
+
+@media screen and (min-width: 992px){
+    main {
+        display: flex;
+    }
+
+    .lead {
+        height: 100vh;
+        width: 50vw;
+        background-size: cover;
+    }
+
+    .content {
+        width: 50vw;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .lead {
+        width: 40vw;
+    }
+    .content {
+        width: 60vw;
+    }
 }
