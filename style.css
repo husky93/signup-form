@@ -60,10 +60,6 @@ table {
     box-sizing: border-box;
 }
 
-h1 {
-    font-family: 'Rubik Beastly', cursive;
-}
-
 body {
     font-family: 'Lato', sans-serif;
     background-color: var(--bg-color);
@@ -85,11 +81,29 @@ body {
 
 .layer {
     position: absolute;
-    top: 50%;
-    width: 100%;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: auto;
+    height: 128px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.55);
+    padding: 24px;
 }
+
+h1 {
+    font-family: 'Rubik Beastly', cursive;
+    font-size: 36px;
+}
+
+.logo {
+    height: 4rem;
+    width: 4rem;
+    margin-right: 8px;
+}
+
+
+
 
 a {
     color: var(--font-color);
