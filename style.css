@@ -51,12 +51,21 @@ table {
 
 :root {
     --bg-color: #201D32;
-    --font-color: #727080;
+    --font-color: #BEBAD4;
     --md: 768px;
     --lg: 992px;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Rubik Beastly', cursive;
+}
+
 body {
+    font-family: 'Lato', sans-serif;
     background-color: var(--bg-color);
     color: var(--font-color);
 }
@@ -68,8 +77,9 @@ body {
     background-position-y: bottom;
     position: relative;
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
     padding: 18px;
 }
 
@@ -79,6 +89,10 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+a {
+    color: var(--font-color);
 }
 
 @media screen and (min-width: 768px){
