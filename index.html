@@ -28,31 +28,33 @@
                <form action="#" method="post" class="form">
                     <div class="input_wrapper">
                         <label for="name">First name</label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name" placeholder="David" required>
                     </div>
                     <div class="input_wrapper">
                         <label for="surname">Last name</label>
-                        <input type="text" id="surname" name="surname" required>
+                        <input type="text" id="surname" name="surname" placeholder="Beckham" required>
                     </div>
                     <div class="input_wrapper">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" required>
+                        <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
                     </div>
                     <div class="input_wrapper">
                         <label for="number">Number</label>
                         <input type="tel" 
                         name="number" 
                         id="number" 
+                        placeholder="+48555555555"
                         pattern="^(?:(?:(?:(?:\+|00)\d{2})?[ -]?(?:(?:\(0?\d{2}\))|(?:0?\d{2})))?[ -]?(?:\d{3}[- ]?\d{2}[- ]?\d{2}|\d{2}[- ]?\d{2}[- ]?\d{3}|\d{7})|(?:(?:(?:\+|00)\d{2})?[ -]?\d{3}[ -]?\d{3}[ -]?\d{3}))$" 
                         required>
                     </div>
                     <div class="input_wrapper">
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password" required>
+                        <input type="password" name="password" id="password" placeholder="********" required>
+                        <span class="warning"></span>
                     </div>
                     <div class="input_wrapper">
                         <label for="conpassword">Confirm password</label>
-                        <input type="password" name="conpassword" id="conpassword" required>
+                        <input type="password" name="" id="conpassword" placeholder="********" required>
                     </div>
                     <button type="submit" class="btn btn--primary">Create account</button>
                </form>

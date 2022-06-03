@@ -187,6 +187,21 @@ input:focus {
     border: 2px solid var(--primary-color);
 }
 
+.input--warning {
+    border: 2px solid #F03C26;
+}
+
+.input--warning:focus {
+    border: 2px solid #F03C26;
+}
+
+.warning {
+    margin-top: 4px;
+    color: #F03C26;
+    font-size: 14px;
+    font-weight: 300;
+}
+
 @media screen and (min-width: 768px){
     .lead {
         background-position-y: center;
