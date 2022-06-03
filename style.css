@@ -52,6 +52,7 @@ table {
 :root {
     --bg-color: #201D32;
     --font-color: #BEBAD4;
+    --primary-color: #FC8335;
     --md: 768px;
     --lg: 992px;
 }
@@ -67,7 +68,7 @@ body {
 }
 
 .lead {
-    height: 50vh;
+    min-height: 50vh;
     background-image: url(./assets/citynight.jpg);
     background-size: cover;
     background-position-y: bottom;
@@ -76,6 +77,11 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    padding: 18px;
+}
+
+.content {
+    min-height: 50vh;
     padding: 18px;
 }
 
@@ -96,17 +102,89 @@ h1 {
     font-size: 36px;
 }
 
+h2 {
+    margin-bottom: 24px;
+}
+
+p {
+    margin-bottom: 4px;
+}
+
+.text {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.content p:nth-child(3) {
+    margin-top: 16px;
+}
+
 .logo {
     height: 4rem;
     width: 4rem;
     margin-right: 8px;
 }
 
-
-
-
 a {
     color: var(--font-color);
+}
+
+em {
+    font-style: italic;
+    margin-right: 3px;
+}
+
+.form {
+    margin-top: 16px;
+}
+
+h2 {
+    margin-top: 32px;
+}
+
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.2s;
+}
+
+.btn--primary {
+    background-color: var(--primary-color);
+}
+
+.btn--primary:hover {
+    background-color: #E37730;
+}
+
+.btn--primary:active {
+    background-color: #BD6328;
+}
+
+label {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.input_wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+input {
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+}
+
+input:focus {
+    border: 2px solid var(--primary-color);
 }
 
 @media screen and (min-width: 768px){
@@ -121,21 +199,54 @@ a {
     }
 
     .lead {
-        height: 100vh;
+        min-height: 100vh;
         width: 50vw;
         background-size: cover;
+        padding: 24px;
     }
 
     .content {
         width: 50vw;
+        padding: 24px;
+        display: flex;
+        align-items: center;
+    }
+
+    .text {
+        font-size: 24px;
+    }
+
+    h2 {
+        margin-top: 96px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .input_wrapper {
+        flex: calc(50% - 16px);
+    }
+
+    em {
+        margin-right: 4px;
     }
 }
 
 @media screen and (min-width: 1200px){
     .lead {
         width: 40vw;
+        padding: 32px;
     }
     .content {
         width: 60vw;
+        padding: 32px;
+    }
+
+    .text {
+        font-size: 28px;
     }
 }
