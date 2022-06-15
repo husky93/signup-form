@@ -68,7 +68,7 @@ body {
 }
 
 .lead {
-    min-height: 50vh;
+    min-height: max(60vh, 450px);
     background-image: url(./assets/citynight.jpg);
     background-size: cover;
     background-position-y: bottom;
@@ -214,7 +214,7 @@ input:focus {
     }
 
     .lead {
-        min-height: 100vh;
+        min-height: max(100vh, 450px);
         width: 50vw;
         background-size: cover;
         padding: 24px;
